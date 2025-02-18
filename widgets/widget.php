@@ -1,9 +1,9 @@
 <?php
 
-class Bonnes_Nouvelles_Widget extends \Elementor\Widget_Base {
+class Good_News_Widget extends \Elementor\Widget_Base {
 
     public function get_name() {
-        return 'bonnes_nouvelles';
+        return 'wp_goodnews';
     }
 
     public function get_title() {
@@ -11,7 +11,7 @@ class Bonnes_Nouvelles_Widget extends \Elementor\Widget_Base {
     }
 
     public function get_icon() {
-        return 'eicon-code';
+        return 'eicon-hypster';
     }
 
     public function get_categories() {

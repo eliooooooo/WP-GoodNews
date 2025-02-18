@@ -1,6 +1,6 @@
 <?php
 
-class Bonnes_Nouvelles_Generator {
+class Good_News_Gen {
 
     public function run() {
         // Enregistrer les scripts et les styles
@@ -29,7 +29,7 @@ class Bonnes_Nouvelles_Generator {
     // Fonction pour enregistrer les widgets Elementor
     public function register_widgets() {
         require_once plugin_dir_path(dirname(__FILE__)) . 'widgets/widget.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Bonnes_Nouvelles_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Good_News_Widget());
     }
     
     // Fonction pour ajouter un shortcode

@@ -15,8 +15,8 @@ if (!defined('ABSPATH')) {
 require_once plugin_dir_path(__FILE__) . 'includes/generator.php';
 
 // Initialiser le plugin
-function run_bonnes_nouvelles_generator() {
-    $plugin = new Bonnes_Nouvelles_Generator();
+function run_wp_goodnews() {
+    $plugin = new Good_News_Gen();
     $plugin->run();
 }
-run_bonnes_nouvelles_generator();
+run_wp_goodnews();
