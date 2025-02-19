@@ -23,7 +23,16 @@ let goodnews = [
 document.addEventListener('DOMContentLoaded', function() {
     let container = document.querySelectorAll('.wp-goodnews-content');
 
-    container.forEach(function(item) {
-        item.innerHTML = goodnews[Math.floor(Math.random() * goodnews.length)];
-    });
+    if (container) {
+        container.forEach(function(item) {
+            item.innerHTML = goodnews[Math.floor(Math.random() * goodnews.length)];
+        });
+    }
+
+    let goodnewsButton = document.querySelectorAll('.wp-goodnews-button');
+    if ( goodnewsButton && container ) {
+        container.forEach(function(item) {
+            item.innerHTML = goodnews[Math.floor(Math.random() * goodnews.length)];
+        })
+    }
 });

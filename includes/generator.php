@@ -36,7 +36,7 @@ class Good_News_Gen {
     public function wp_goodnews_shortcode() {
         ob_start();
         ?>
-        <div class="wp-goodnews-content">[WP GoodNews bloc]</div>
+        <div class="wp-goodnews-content"></div>
         <?php
         return ob_get_clean();
     }

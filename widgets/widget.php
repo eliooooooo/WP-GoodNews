@@ -23,6 +23,6 @@ class Good_News_Widget extends \Elementor\Widget_Base {
 
     protected function render() {
         $settings = $this->get_settings_for_display();
-        echo '<div class="wp-goodnews-content">[WP GoodNews bloc]</div>';
+        echo '<div class="wp-goodnews-content"></div>';
     }
 }
